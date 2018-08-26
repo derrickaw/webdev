@@ -17,13 +17,13 @@
 
 		<div>
 			<label for="Male">Male</label>
-			<input id="Male" type="radio" name="Sex">
+			<input id="Male" type="radio" name="Sex" value="male">
 
 			<label for="Female">Female</label>
-			<input id="Female" type="radio" name="Sex">
+			<input id="Female" type="radio" name="Sex" value="female">
 
 			<label for="Other">Other</label>
-			<input id="Other" type="radio" name="Sex">
+			<input id="Other" type="radio" name="Sex" value="other">
 		</div>
 
 		<div>
@@ -31,12 +31,12 @@
 			<input id="email" type="email" name="Email" placeholder="your email" required>
 
 			<label for="password">Password:</label>
-			<input id="password" type="password" name="Password" minlength="5" maxlength="10" required>
+			<input id="password" type="password" name="Password" pattern=".{5,10}" required title="Password must be between 5 to 10 characters">
 		</div>
 
 		<div>
 			<label for="dob">Birthday:</label>
-			<select name="dob" id="Month">
+			<select name="Month" id="dob">
 				<option>Month</option>
 				<option>January</option>
 				<option>February</option>
@@ -52,7 +52,7 @@
 				<option>December</option>
 			</select>
 
-			<select name="dob" id="Day">
+			<select name="Day" id="dob">
 				<option>Day</option>
 				<option>1</option>
 				<option>2</option>
@@ -86,7 +86,7 @@
 				<option>30</option>
 			</select>
 
-			<select name="dob" id="Year">
+			<select name="Year" id="dob">
 				<option>Year</option>
 				<option>2018</option>
 				<option>2017</option>
@@ -100,7 +100,8 @@
 		</div>
 
 
-		<button>Submit</button>
+		<!-- <button>Submit</button> -->
+		<input type="Submit">
 	</form>
 </body>
 </html>
