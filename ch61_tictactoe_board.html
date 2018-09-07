@@ -2,10 +2,31 @@
 <html>
 <head>
 	<title>Table</title>
+	<link rel="stylesheet" type="text/css" href="ch61_tictactoe_board.css">
 </head>
 <body>
 	<h1>Tic Tac Toe</h1>
 
-	
+	<table>
+		<!-- Use of classes is better than the original id thought -->
+		<tr>
+			<td></td>
+			<td class="vertical"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="horizontal"></td>
+			<!-- two classes can exest in one element -->
+			<td class="horizontal vertical"></td> 
+			<td class="horizontal"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="vertical"></td>
+			<td></td>
+		</tr>
+
+
+	</table>
 </body>
 </html>
