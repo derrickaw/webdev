@@ -1,0 +1,6 @@
+img {
+	/* 30% is relative to the parent, or the body in this sense*/
+	width: 30%; 
+	float: left;
+	margin: 1.66%;
+}
