@@ -1,26 +1,27 @@
 function isEven(x) { 
-    if(x % 2 === 0) { 
-        return true; 
-    } 
-    return false; 
+    return x % 2 === 0;
 }
 
 function factorial(x) { 
     if(x === 0) { 
-        return 1
+        return 1;
     } else {
-        return x * factorial(x - 1) 
+        return x * factorial(x - 1);
     }
+    // Could use a for loop instead of a recursive function
 }
 
 function kebabToSnake(str) { 
-    var newStr = ""
-    for(var i = 0; i < str.length; i++) { 
-        if(str[i] === "-") {
-            newStr += "_";
-        } else {
-            newStr += str[i];
-        }
-    }
-    return newStr;
+
+    return str.replace(/-/g, '_')
+
+    // var newStr = ""
+    // for(var i = 0; i < str.length; i++) { 
+    //     if(str[i] === "-") {
+    //         newStr += "_";
+    //     } else {
+    //         newStr += str[i];
+    //     }
+    // }
+    // return newStr;
 }
