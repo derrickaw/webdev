@@ -1,4 +1,4 @@
-var arr = [
+var movies = [
     {"title": "Matrix", 
      "rating": 5,
      "hasWatched": true},
@@ -13,14 +13,15 @@ var arr = [
      "hasWatched": false}
 ];
 
-arr.forEach(function(movie){
+// Could refactor this into a separate function for output
+movies.forEach(function(movie){
     var output = "You have ";
-    if(movie["hasWatched"]){
+    if(movie.hasWatched){
         output += "watched ";
     }
     else {
         output += "not seen ";
     }
-    output += "\"" + movie["title"] + "\" - " + movie["rating"] + " stars";
+    output += "\"" + movie.title + "\" - " + movie.rating + " stars";
     console.log(output);
 })
