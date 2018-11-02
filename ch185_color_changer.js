@@ -3,15 +3,18 @@ button.addEventListener('click', changeBody);
 
 var body = document.querySelector("body");
 
-var body_color = "white";
+var isPurple = false;
+
+// function changeBody() {
+//     if(isPurple) {
+//         body.style.backgroundColor = "white";
+//     }
+//     else {
+//         body.style.backgroundColor = "purple";
+//     }
+//     isPurple = !isPurple;
+// }
 
 function changeBody() {
-    if(body_color === "white") {
-        body.style.backgroundColor = "purple";
-        body_color = "purple";
-    }
-    else {
-        body.style.backgroundColor = "white";
-        body_color = "white";
-    }
+    body.classList.toggle("purple");
 }
